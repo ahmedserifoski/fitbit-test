@@ -2,7 +2,7 @@ import React from "react"
 
 function Trackers(props) {
     return(
-        <div className="other">
+        <div id="trackers" className="other">
             <img className="small-div" src={props.tracker.src} alt="Fitbit Tracker" />
             
             <div className="name">

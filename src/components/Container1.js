@@ -8,6 +8,10 @@ import { faBraille } from "@fortawesome/free-solid-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
+import { HashLink as Link } from 'react-router-hash-link';
+import { BrowserRouter as Router } from 'react-router-dom';
+
+
 class Container1 extends React.Component {
     state = {
       menu_class: ""
@@ -25,21 +29,23 @@ class Container1 extends React.Component {
       }
     }
 
+    // <Link to="/some/path#with-hash-fragment">Link to Hash Fragment</Link>
+
     render () {
       let top_menu_class = `item ${this.state.menu_class}`
       return(
           <div className="container1">
-
+            <Router>
           <nav>
               <ul className= "menu">
                 <li className="logo"><a href="#menu"><FontAwesomeIcon icon={faBraille} size="lg" />fitbit</a></li>
-                <li className={top_menu_class}><a href="#versa-title">Smartwatches</a></li>
-                <li className={top_menu_class}><a href="#trackers-title">Trackers</a></li>
-                <li className={top_menu_class}><a href="#services-title">Services</a></li>
+                <li className={top_menu_class}><Link to="#smartwatches">Smartwatches</Link></li>
+                <li className={top_menu_class}><Link to="#trackers">Trackers</Link></li>
+                <li className={top_menu_class}><Link to="#smart-scales">Services</Link></li>
                 <li className="toggle"><a href="#toggle"><FontAwesomeIcon icon={faBars} size="lg" onClick={this.setToggleTopMenuClass}/></a></li>
               </ul>
           </nav>
-
+          </Router>
           <div className="three-watches">
 
               <h1>Versa family & Ionic</h1><br/>
