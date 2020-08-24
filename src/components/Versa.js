@@ -4,7 +4,7 @@ import React from "react"
 
 function Versa(props) {
     return(
-        <div id="smartwatches" className="watchesdiv">
+        <div className="watchesdiv">
             <img className="small-div" src={props.versa.src} alt="Fitbit Versa 2"/>
 
             <div className="name">

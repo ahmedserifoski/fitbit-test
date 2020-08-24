@@ -2,7 +2,7 @@ import React from "react"
 
 function SmartScales(props) {
     return(
-        <div id="smart-scales" className="other">
+        <div  className="other">
             <img className="small-div" src={props.scale.src} alt="Fitbit Ionic" />
             
             <div className="name">

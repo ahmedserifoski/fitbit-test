@@ -34,7 +34,7 @@ function Container2(props) {
             <p className="from-smartwatches">From smartwatches and trackers to accessories and more, everything you need to find your fit is right here.</p>
             <h1 className="smartwatches">Smartwatches</h1>
             
-            <h2 className="versa-title">Versa Family </h2>
+            <h2 id="smartwatches" className="versa-title">Versa Family </h2>
             <div className="versa">
                 {versaComponents}
             </div>
@@ -46,12 +46,12 @@ function Container2(props) {
             </div>
             
 
-            <h2 className="trackers-title">Trackers</h2>
+            <h2 id="trackers" className="trackers-title">Trackers</h2>
             <div className="trackers">
                 {trackerComponents}
             </div>
 
-            <h2 id="services" className="services-title">Services</h2>
+            <h2 id="smart-scales" className="services-title">Services</h2>
             <div className="trackers">
 
                 <div className="other">
